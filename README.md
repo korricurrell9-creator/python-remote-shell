@@ -1,50 +1,39 @@
+# Python Remote Shell
+
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-# Python Remote Shell
-
-A simple Python TCP server/client setup for remote command execution.
-
-## Server
-- Can run on Kali or Android (Termux)
-- Listens on port 9999
-
-## Client
-- Connects to server
-- Executes commands remotely
-# Python Remote Shell
-
 A simple Python TCP server/client setup for remote command execution.  
-This project allows you to run a server on **Kali Linux** or **Android (Termux)** and control it remotely from a client machine.
+Control a server running on **Kali Linux**, **PC**, or **Android (Termux)** from a client machine.
 
 ---
 
 ## Table of Contents
 - [Requirements](#requirements)
-- [Setup](#setup)
-  - [Server on Kali](#server-on-kali)
-  - [Server on Termux](#server-on-termux)
-- [Client Usage](#client-usage)
+- [Installation](#installation)
+- [Server Setup](#server-setup)
+  - [Kali Linux / PC](#server-on-kali-linux)
+  - [Android (Termux)](#server-on-android-termux)
+- [Client Setup](#client-setup)
 - [Example Commands](#example-commands)
 - [Troubleshooting](#troubleshooting)
-- [Safety Notes](#safety-notes)
+- [Safety / Disclaimer](#safety--disclaimer)
 
 ---
 
 ## Requirements
 
-- Python 3.x
-- Git (for cloning)
-- Termux (if running server on Android)
-- Wi-Fi connection on same network for client/server communication
+- Python 3.x on both server and client  
+- Git (if cloning from GitHub)  
+- Termux installed on Android device (if running server on Android)  
+- Wi-Fi connection on the same network for client/server communication
 
 ---
 
-## Setup
+## Installation
 
-### Server on Kali
+1. Clone this repository on all devices that need the server or client:
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/korricurrell9-creator/python-remote-shell.git
 cd python-remote-shell
